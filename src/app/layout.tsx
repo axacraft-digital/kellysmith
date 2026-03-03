@@ -14,9 +14,33 @@ const newsreader = Newsreader({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kellysmith.com"),
   title: "Kelly Smith",
   description:
     "Entrepreneur, product leader, and technologist based in Boise, Idaho.",
+  openGraph: {
+    title: "Kelly Smith",
+    description:
+      "Entrepreneur, product leader, and technologist based in Boise, Idaho.",
+    url: "https://kellysmith.com",
+    siteName: "Kelly Smith",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kelly Smith",
+    description:
+      "Entrepreneur, product leader, and technologist based in Boise, Idaho.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({

@@ -2,9 +2,26 @@ import Image from "next/image";
 import Link from "next/link";
 import { ventures, roles, links } from "@/lib/data";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Kelly Smith",
+  url: "https://kellysmith.com",
+  jobTitle: "Entrepreneur & Product Leader",
+  sameAs: [
+    "https://linkedin.com/in/kellysmith",
+    "https://x.com/kellysmith",
+    "https://instagram.com/kellysmith",
+  ],
+};
+
 export default function Home() {
   return (
     <main className="mx-auto max-w-[680px] px-6 py-20 md:py-32">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Header */}
       <header className="mb-24">
         <Image

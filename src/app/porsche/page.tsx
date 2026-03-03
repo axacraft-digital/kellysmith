@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   title: "Porsche — Kelly Smith",
   description:
     "Kelly Smith's collection of Porsches and Ferraris, and organizer of Idaho Air.",
+  openGraph: {
+    title: "Porsche — Kelly Smith",
+    description:
+      "Kelly Smith's collection of Porsches and Ferraris, and organizer of Idaho Air.",
+    url: "https://kellysmith.com/porsche",
+  },
 };
 
 export default function PorschePage() {
