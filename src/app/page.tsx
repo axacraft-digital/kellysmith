@@ -17,11 +17,11 @@ export default function Home() {
         />
         <h1 className="font-serif text-3xl tracking-tight">Kelly Smith</h1>
         <p className="mt-1 font-serif text-xl italic text-muted">
-          Building at the intersection of product, design, and engineering.
+          Technology polymath building at the intersection of design &amp; code.
         </p>
         <p className="mt-4 text-muted">
-          Entrepreneur and technologist based in Boise, Idaho. Previously led
-          digital at Starbucks, Athletic Greens, and MGM Resorts.
+          Previously led digital at Starbucks, Athletic Greens, MGM Resorts
+          &amp; Hagerty.
         </p>
       </header>
 
@@ -31,10 +31,11 @@ export default function Home() {
           Now
         </h2>
         <p>
-          Now running Curious Office, my lab for seed-stage investment and
-          startup incubator, spending most of my time rethinking primary care
-          telehealth and the future of EHR systems with Teligant. In my spare
-          time, I collect{" "}
+          Running Curious Office since 2007 — my lab for incubating companies
+          and seed-stage investing. Teligant focuses on the best products that
+          support the future of telehealth and next-gen EHR systems. Axacraft
+          helps enterprises develop and deploy solutions faster via AI-first,
+          agentic approaches. In my spare time, I collect{" "}
           <Link
             href="/porsche"
             className="underline decoration-border underline-offset-4 hover:decoration-muted"
