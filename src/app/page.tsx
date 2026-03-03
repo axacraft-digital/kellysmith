@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ventures, roles, links } from "@/lib/data";
 
@@ -6,13 +7,21 @@ export default function Home() {
     <main className="mx-auto max-w-[680px] px-6 py-20 md:py-32">
       {/* Header */}
       <header className="mb-24">
+        <Image
+          src="/kelly-avatar.png"
+          alt="Kelly Smith"
+          width={72}
+          height={72}
+          className="mb-5 rounded-full"
+          priority
+        />
         <h1 className="font-serif text-3xl tracking-tight">Kelly Smith</h1>
         <p className="mt-1 font-serif text-xl italic text-muted">
           Building at the intersection of product, design, and engineering.
         </p>
         <p className="mt-4 text-muted">
-          Entrepreneur and technologist based in Boise, Idaho. Previously led digital
-          at Starbucks, Athletic Greens, and MGM Resorts.
+          Entrepreneur and technologist based in Boise, Idaho. Previously led
+          digital at Starbucks, Athletic Greens, and MGM Resorts.
         </p>
       </header>
 
@@ -32,7 +41,8 @@ export default function Home() {
           >
             Porsches
           </Link>{" "}
-          and host one of the largest classic Porsche events in the country at{" "}
+          and host one of the largest classic Porsche events in the country
+          at{" "}
           <a
             href="https://idaho-air.com"
             target="_blank"
@@ -75,7 +85,10 @@ export default function Home() {
         </h2>
         <div className="space-y-3">
           {roles.map((r) => (
-            <div key={`${r.title}-${r.company}`} className="flex items-baseline justify-between">
+            <div
+              key={`${r.title}-${r.company}`}
+              className="flex items-baseline justify-between"
+            >
               <span>
                 {r.title}, {r.company}
               </span>
@@ -96,7 +109,11 @@ export default function Home() {
               key={l.label}
               href={l.url}
               target={l.url.startsWith("mailto:") ? undefined : "_blank"}
-              rel={l.url.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+              rel={
+                l.url.startsWith("mailto:")
+                  ? undefined
+                  : "noopener noreferrer"
+              }
               className="underline decoration-border underline-offset-4 hover:decoration-muted"
             >
               {l.label}
@@ -113,7 +130,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="text-sm text-muted">
-        <p>© {new Date().getFullYear()} Kelly Smith</p>
+        <p>&copy; {new Date().getFullYear()} Kelly Smith</p>
       </footer>
     </main>
   );
