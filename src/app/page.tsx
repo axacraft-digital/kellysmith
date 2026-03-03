@@ -60,20 +60,21 @@ export default function Home() {
         <h2 className="mb-6 text-xs font-medium uppercase tracking-widest text-muted">
           Ventures
         </h2>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div className="divide-y divide-border">
           {ventures.map((v) => (
-            <div key={v.name}>
-              <a
-                href={v.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline decoration-border underline-offset-4 hover:decoration-muted"
-              >
-                {v.name}
-                <span className="ml-0.5 text-muted"> ↗</span>
-              </a>
-              <p className="mt-0.5 text-sm text-muted">{v.description}</p>
-            </div>
+            <a
+              key={v.name}
+              href={v.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-baseline justify-between py-3"
+            >
+              <div>
+                <span>{v.name}</span>
+                <p className="mt-0.5 text-sm text-muted">{v.description}</p>
+              </div>
+              <span className="shrink-0 text-muted">↗</span>
+            </a>
           ))}
         </div>
       </section>
@@ -83,11 +84,11 @@ export default function Home() {
         <h2 className="mb-6 text-xs font-medium uppercase tracking-widest text-muted">
           Previously
         </h2>
-        <div className="space-y-3">
+        <div className="divide-y divide-border">
           {roles.map((r) => (
             <div
               key={`${r.title}-${r.company}`}
-              className="flex items-baseline justify-between"
+              className="flex items-baseline justify-between py-3"
             >
               <span>
                 {r.title}, {r.company}

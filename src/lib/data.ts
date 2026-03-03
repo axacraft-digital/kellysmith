@@ -10,11 +10,6 @@ export const ventures = [
     description: "AI-powered primary care",
   },
   {
-    name: "Zeitcore",
-    url: "https://zeitcore.com",
-    description: "Shopify Plus data intelligence",
-  },
-  {
     name: "Teligant",
     url: "https://teligant.com",
     description: "Telehealth infrastructure",
