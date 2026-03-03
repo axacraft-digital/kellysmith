@@ -108,10 +108,8 @@ export default function Home() {
               key={`${r.title}-${r.company}`}
               className="flex items-baseline justify-between py-3"
             >
-              <span>
-                {r.title}, {r.company}
-              </span>
-              <span className="text-sm text-muted">{r.years}</span>
+              <span>{r.company}</span>
+              <span className="text-sm text-muted">{r.title}</span>
             </div>
           ))}
         </div>

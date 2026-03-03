@@ -17,10 +17,10 @@ export const ventures = [
 ];
 
 export const roles = [
-  { title: "CDO", company: "Athletic Greens", years: "2021–2023" },
-  { title: "VP Product", company: "Starbucks", years: "2018–2021" },
-  { title: "CDO", company: "MGM Resorts", years: "2016–2018" },
-  { title: "CDO", company: "Hagerty", years: "2014–2016" },
+  { title: "Chief Digital Officer", company: "Athletic Greens" },
+  { title: "Vice President, Product", company: "Starbucks" },
+  { title: "Chief Digital Officer", company: "MGM Resorts" },
+  { title: "Chief Digital Officer", company: "Hagerty" },
 ];
 
 export const links = [
