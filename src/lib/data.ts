@@ -26,8 +26,8 @@ export const roles = [
 export const links = [
   { label: "Email", url: "mailto:kellysmith@kellysmith.com" },
   { label: "LinkedIn", url: "https://linkedin.com/in/kellysmith" },
-  { label: "X", url: "https://x.com/kellysmith" },
-  { label: "Instagram", url: "https://instagram.com/kellysmith" },
+  { label: "X", url: "https://x.com/curiousoffice" },
+  { label: "Instagram", url: "https://instagram.com/curiousoffice" },
 ];
 
 export const cars = [

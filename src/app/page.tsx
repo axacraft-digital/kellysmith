@@ -10,8 +10,8 @@ const jsonLd = {
   jobTitle: "Entrepreneur & Product Leader",
   sameAs: [
     "https://linkedin.com/in/kellysmith",
-    "https://x.com/kellysmith",
-    "https://instagram.com/kellysmith",
+    "https://x.com/curiousoffice",
+    "https://instagram.com/curiousoffice",
   ],
 };
 
