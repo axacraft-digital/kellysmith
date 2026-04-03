@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-[680px] px-6 py-20 md:py-32">
       {/* Header */}
-      <header className="mb-24">
+      <header className="animate-enter mb-24" style={{ "--stagger": 0 } as React.CSSProperties}>
         <Image
           src="/kelly-avatar.png"
           alt="Kelly Smith"
@@ -26,7 +26,7 @@ export default function Home() {
       </header>
 
       {/* Now */}
-      <section className="mb-24">
+      <section className="animate-enter mb-24" style={{ "--stagger": 1 } as React.CSSProperties}>
         <h2 className="mb-6 text-xs font-medium uppercase tracking-widest text-muted">
           Now
         </h2>
@@ -66,7 +66,7 @@ export default function Home() {
       </section>
 
       {/* Ventures */}
-      <section className="mb-24">
+      <section className="animate-enter mb-24" style={{ "--stagger": 2 } as React.CSSProperties}>
         <h2 className="mb-6 text-xs font-medium uppercase tracking-widest text-muted">
           Ventures
         </h2>
@@ -90,7 +90,7 @@ export default function Home() {
       </section>
 
       {/* Previously */}
-      <section className="mb-24">
+      <section className="animate-enter mb-24" style={{ "--stagger": 3 } as React.CSSProperties}>
         <h2 className="mb-6 text-xs font-medium uppercase tracking-widest text-muted">
           Previously
         </h2>
@@ -112,7 +112,7 @@ export default function Home() {
       </section>
 
       {/* Connect */}
-      <section className="mb-24">
+      <section className="animate-enter mb-24" style={{ "--stagger": 4 } as React.CSSProperties}>
         <h2 className="mb-6 text-xs font-medium uppercase tracking-widest text-muted">
           Connect
         </h2>
@@ -142,7 +142,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="text-sm text-muted">
+      <footer className="animate-enter text-sm text-muted" style={{ "--stagger": 5 } as React.CSSProperties}>
         <p>&copy; {new Date().getFullYear()} Kelly Smith</p>
       </footer>
     </main>
