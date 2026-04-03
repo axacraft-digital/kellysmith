@@ -14,6 +14,11 @@ export const ventures = [
     url: "https://teligant.com",
     description: "Telehealth infrastructure",
   },
+  {
+    name: "Axacraft",
+    url: "https://axacraft.com",
+    description: "AI-first enterprise solutions & agentic development",
+  },
 ];
 
 export const roles = [
