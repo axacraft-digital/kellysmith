@@ -22,10 +22,10 @@ export const ventures = [
 ];
 
 export const roles = [
-  { title: "Chief Digital Officer", company: "Athletic Greens" },
-  { title: "Vice President, Product", company: "Starbucks" },
-  { title: "Chief Digital Officer", company: "MGM Resorts" },
-  { title: "Chief Digital Officer", company: "Hagerty" },
+  { title: "Chief Digital Officer", company: "Athletic Greens", url: "https://athleticgreens.com" },
+  { title: "Vice President, Product", company: "Starbucks", url: "https://starbucks.com" },
+  { title: "Chief Digital Officer", company: "MGM Resorts", url: "https://mgmresorts.com" },
+  { title: "Chief Digital Officer", company: "Hagerty", url: "https://hagerty.com" },
 ];
 
 export const links = [

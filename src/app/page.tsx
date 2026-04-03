@@ -104,13 +104,17 @@ export default function Home() {
         </h2>
         <div className="divide-y divide-border">
           {roles.map((r) => (
-            <div
+            <a
               key={`${r.title}-${r.company}`}
+              href={r.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-baseline justify-between py-3"
             >
               <span>{r.company}</span>
               <span className="text-sm text-muted">{r.title}</span>
-            </div>
+              <span className="shrink-0 text-muted">↗</span>
+            </a>
           ))}
         </div>
       </section>
