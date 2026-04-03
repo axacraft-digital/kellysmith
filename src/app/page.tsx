@@ -2,26 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { ventures, roles, links } from "@/lib/data";
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Kelly Smith",
-  url: "https://kellysmith.com",
-  jobTitle: "Entrepreneur & Product Leader",
-  sameAs: [
-    "https://linkedin.com/in/kellysmith",
-    "https://x.com/curiousoffice",
-    "https://instagram.com/curiousoffice",
-  ],
-};
-
 export default function Home() {
   return (
     <main className="mx-auto max-w-[680px] px-6 py-20 md:py-32">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
       {/* Header */}
       <header className="mb-24">
         <Image
@@ -48,7 +31,16 @@ export default function Home() {
           Now
         </h2>
         <p>
-          Running Curious Office since 2007 — my lab for incubating companies
+          Running{" "}
+          <a
+            href="https://curiousoffice.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-border underline-offset-4 hover:decoration-muted"
+          >
+            Curious Office
+          </a>{" "}
+          since 2007 — my lab for incubating companies
           and seed-stage investing. Teligant focuses on the best products that
           support the future of telehealth and next-gen EHR systems. Axacraft
           helps enterprises develop and deploy solutions faster via AI-first,

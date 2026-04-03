@@ -1,0 +1,7 @@
+interface:
+  display_name: "Technical SEO + A11y"
+  short_description: "Audit and improve code-level SEO and accessibility."
+  default_prompt: "Use $technical-seo-a11y to audit this Next.js site for technical SEO and accessibility issues, then implement the highest-impact fixes."
+
+policy:
+  allow_implicit_invocation: true

@@ -2,18 +2,14 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { cars } from "@/lib/data";
+import { buildMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Porsche — Kelly Smith",
   description:
     "Kelly Smith's collection of Porsches and Ferraris, and organizer of Idaho Air.",
-  openGraph: {
-    title: "Porsche — Kelly Smith",
-    description:
-      "Kelly Smith's collection of Porsches and Ferraris, and organizer of Idaho Air.",
-    url: "https://kellysmith.com/porsche",
-  },
-};
+  path: "/porsche",
+});
 
 export default function PorschePage() {
   return (

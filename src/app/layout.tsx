@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Newsreader } from "next/font/google";
+import { buildMetadata } from "@/lib/metadata";
+import { buildWebSiteSchema, buildPersonSchema } from "@/lib/seo-schema";
+import { JsonLd } from "@/components/seo/json-ld";
 import "./globals.css";
 
 const inter = Inter({
@@ -14,25 +17,12 @@ const newsreader = Newsreader({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://kellysmith.com"),
-  title: "Kelly Smith",
-  description:
-    "Entrepreneur, product leader, and technologist based in Boise, Idaho.",
-  openGraph: {
+  ...buildMetadata({
     title: "Kelly Smith",
     description:
       "Entrepreneur, product leader, and technologist based in Boise, Idaho.",
-    url: "https://kellysmith.com",
-    siteName: "Kelly Smith",
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Kelly Smith",
-    description:
-      "Entrepreneur, product leader, and technologist based in Boise, Idaho.",
-  },
+    path: "/",
+  }),
   robots: {
     index: true,
     follow: true,
@@ -53,6 +43,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${newsreader.variable} antialiased`}
       >
+        <JsonLd data={[buildWebSiteSchema(), buildPersonSchema()]} />
         {children}
       </body>
     </html>
