@@ -109,11 +109,11 @@ export default function Home() {
               href={r.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-baseline justify-between py-3"
+              className="flex items-baseline py-3"
             >
-              <span>{r.company}</span>
+              <span className="w-40 shrink-0">{r.company}</span>
               <span className="text-sm text-muted">{r.title}</span>
-              <span className="shrink-0 text-muted">↗</span>
+              <span className="ml-auto shrink-0 text-muted">↗</span>
             </a>
           ))}
         </div>
