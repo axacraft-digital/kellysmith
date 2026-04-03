@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ventures, roles, links } from "@/lib/data";
+import { WorldClocks } from "@/components/world-clocks";
 
 export default function Home() {
   return (
@@ -141,8 +142,17 @@ export default function Home() {
         </div>
       </section>
 
+      {/* World Clocks */}
+      <section className="animate-enter mb-24" style={{ "--stagger": 5 } as React.CSSProperties}>
+        <hr className="mb-10 border-border" />
+        <h2 className="mb-6 text-xs font-medium uppercase tracking-widest text-muted">
+          Local Time
+        </h2>
+        <WorldClocks />
+      </section>
+
       {/* Footer */}
-      <footer className="animate-enter text-sm text-muted" style={{ "--stagger": 5 } as React.CSSProperties}>
+      <footer className="animate-enter text-sm text-muted" style={{ "--stagger": 6 } as React.CSSProperties}>
         <p>&copy; {new Date().getFullYear()} Kelly Smith</p>
       </footer>
     </main>
