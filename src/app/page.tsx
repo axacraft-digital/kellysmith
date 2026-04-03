@@ -77,7 +77,7 @@ export default function Home() {
               href={v.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-baseline justify-between py-3"
+              className="-mx-3 flex items-baseline justify-between rounded-lg px-3 py-3 transition-colors hover:bg-hover"
             >
               <div>
                 <span>{v.name}</span>
@@ -101,7 +101,7 @@ export default function Home() {
               href={r.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-baseline py-3"
+              className="-mx-3 flex items-baseline rounded-lg px-3 py-3 transition-colors hover:bg-hover"
             >
               <span className="w-40 shrink-0">{r.company}</span>
               <span className="text-sm text-muted">{r.title}</span>

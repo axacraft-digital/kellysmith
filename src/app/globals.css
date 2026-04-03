@@ -5,8 +5,19 @@
   --color-foreground: #111111;
   --color-muted: #666666;
   --color-border: #e5e5e5;
+  --color-hover: rgba(0, 0, 0, 0.03);
   --font-sans: var(--font-inter);
   --font-serif: var(--font-newsreader);
+}
+
+@media (prefers-color-scheme: dark) {
+  @theme inline {
+    --color-background: #111111;
+    --color-foreground: #ececec;
+    --color-muted: #999999;
+    --color-border: #262626;
+    --color-hover: rgba(255, 255, 255, 0.04);
+  }
 }
 
 body {
