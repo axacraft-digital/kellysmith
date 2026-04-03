@@ -5,14 +5,14 @@ export const ventures = [
     description: "Innovation lab, seed investment, startup incubation",
   },
   {
+    name: "Teligant",
+    url: "https://teligant.com",
+    description: "Telehealth & clinic management",
+  },
+  {
     name: "Hedfirst",
     url: "https://hedfirst.com",
     description: "AI-powered primary care",
-  },
-  {
-    name: "Teligant",
-    url: "https://teligant.com",
-    description: "Telehealth infrastructure",
   },
   {
     name: "Axacraft",
