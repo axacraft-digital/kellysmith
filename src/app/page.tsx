@@ -19,6 +19,8 @@ export default function Home() {
         <h1 className="font-serif text-3xl tracking-tight">Kelly Smith</h1>
         <p className="mt-1 font-serif text-xl italic text-muted">
           Technology polymath building at the intersection of design &amp; code.
+          Curious entrepreneur building companies for myself while helping
+          select clients build and grow theirs.
         </p>
         <p className="mt-4 text-muted">
           Previously led digital at Starbucks, Athletic Greens, MGM Resorts
