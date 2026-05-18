@@ -24,8 +24,9 @@ export default function Home() {
         </p>
         <p className="mt-4 text-muted">
           Previously led digital at Starbucks, Athletic Greens, MGM Resorts
-          &amp; Hagerty. Earlier, companies I founded or backed were acquired
-          by Amazon, Google, Comcast, ESPN, and Priceline.
+          &amp; Hagerty. Earlier, companies I founded or invested in were
+          acquired by Amazon, Microsoft, Google, Comcast, ESPN, Priceline
+          and others.
         </p>
       </header>
 
