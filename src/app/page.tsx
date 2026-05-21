@@ -30,10 +30,10 @@ export default function Home() {
         </p>
       </header>
 
-      {/* Now */}
+      {/* Overview */}
       <section className="animate-enter mb-24" style={{ "--stagger": 1 } as React.CSSProperties}>
         <h2 className="mb-6 text-xs font-medium uppercase tracking-widest text-muted">
-          Now
+          Overview
         </h2>
         <p>
           Running{" "}
@@ -70,10 +70,10 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Ventures */}
+      {/* Current Ventures */}
       <section className="animate-enter mb-24" style={{ "--stagger": 2 } as React.CSSProperties}>
         <h2 className="mb-6 text-xs font-medium uppercase tracking-widest text-muted">
-          Ventures
+          Current Ventures
         </h2>
         <div className="divide-y divide-border">
           {ventures.map((v) => (
