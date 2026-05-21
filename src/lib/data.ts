@@ -19,6 +19,11 @@ export const ventures = [
     url: "https://axacraft.com",
     description: "AI-first enterprise solutions & agentic development",
   },
+  {
+    name: "Pitform",
+    url: "https://pitform.com",
+    description: "Operating system for automotive events",
+  },
 ];
 
 export const roles = [
