@@ -36,7 +36,7 @@ export default function Home() {
           time, I collect{" "}
           <Link
             href="/porsche"
-            className="underline decoration-border underline-offset-4 hover:decoration-muted"
+            className="text-foreground underline decoration-foreground underline-offset-4 hover:decoration-muted"
           >
             Porsches
           </Link>{" "}
@@ -46,10 +46,10 @@ export default function Home() {
             href="https://idaho-air.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline decoration-border underline-offset-4 hover:decoration-muted"
+            className="text-foreground underline decoration-foreground underline-offset-4 hover:decoration-muted"
           >
             IdahoAir.com
-            <span className="ml-0.5 text-muted"> ↗</span>
+            <span className="ml-0.5"> ↗</span>
           </a>
         </p>
       </header>
