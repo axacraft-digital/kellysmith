@@ -33,30 +33,8 @@ export default function Home() {
           AI-first process and software in telehealth, where Teligant is
           building one of the first AI-native telehealth platforms. I also
           advise consulting firms and operating companies on how AI will
-          reshape supplement, nutrition and wellness workflows.
-        </p>
-      </header>
-
-      {/* Overview */}
-      <section className="animate-enter mb-24" style={{ "--stagger": 1 } as React.CSSProperties}>
-        <h2 className="mb-6 text-xs font-medium uppercase tracking-widest text-muted">
-          Overview
-        </h2>
-        <p>
-          Running{" "}
-          <a
-            href="https://curiousoffice.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-border underline-offset-4 hover:decoration-muted"
-          >
-            Curious Office
-          </a>{" "}
-          since 2007 — my lab for incubating companies
-          and seed-stage investing. Teligant focuses on the best products that
-          support the future of telehealth and next-gen EHR systems. Axacraft
-          helps enterprises develop and deploy solutions faster via AI-first,
-          agentic approaches. In my spare time, I collect{" "}
+          reshape supplement, nutrition and wellness workflows. In my spare
+          time, I collect{" "}
           <Link
             href="/porsche"
             className="underline decoration-border underline-offset-4 hover:decoration-muted"
@@ -75,7 +53,7 @@ export default function Home() {
             <span className="ml-0.5 text-muted"> ↗</span>
           </a>
         </p>
-      </section>
+      </header>
 
       {/* Current Ventures */}
       <section className="animate-enter mb-24" style={{ "--stagger": 2 } as React.CSSProperties}>
