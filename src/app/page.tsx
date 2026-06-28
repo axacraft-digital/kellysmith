@@ -28,6 +28,13 @@ export default function Home() {
           acquired by Amazon, Microsoft, Google, Comcast, ESPN, Priceline
           and others.
         </p>
+        <p className="mt-4 text-muted">
+          Today, I am often brought in as a technical thought leader on
+          AI-first process and software in telehealth, where Teligant is
+          building one of the first AI-native telehealth platforms. I also
+          advise consulting firms and operating companies on how AI will
+          reshape supplement, nutrition and wellness workflows.
+        </p>
       </header>
 
       {/* Overview */}
