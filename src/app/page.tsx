@@ -23,10 +23,10 @@ export default function Home() {
           select clients build and grow theirs.
         </p>
         <p className="mt-4 text-muted">
-          Previously led digital at Starbucks, Athletic Greens, MGM Resorts
-          &amp; Hagerty. Earlier, companies I founded or invested in were
-          acquired by Amazon, Microsoft, Google, Comcast, ESPN, Priceline
-          and others.
+          Former Head of Digital/Technology at Starbucks, Athletic Greens/AG1,
+          MGM Resorts &amp; Hagerty. Earlier, companies I founded or invested
+          in were acquired by Amazon, Microsoft, Google, Comcast, ESPN,
+          Priceline and others.
         </p>
         <p className="mt-4 text-muted">
           Today, I am often brought in as a technical thought leader on
