@@ -36,30 +36,6 @@ export default function PorschePage() {
         </p>
       </header>
 
-      {/* Idaho Air */}
-      <section className="mb-24">
-        <h2 className="mb-6 text-xs font-medium uppercase tracking-widest text-muted">
-          Idaho Air
-        </h2>
-        <p>
-          I organize Idaho Air — the second largest classic air-cooled Porsche
-          event in the US. Every year we bring together collectors and
-          enthusiasts in Boise for a weekend of cars, camaraderie, and mountain
-          roads.
-        </p>
-        <p className="mt-3">
-          <a
-            href="https://idaho-air.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-border underline-offset-4 hover:decoration-muted"
-          >
-            idaho-air.com
-            <span className="ml-0.5 text-muted"> ↗</span>
-          </a>
-        </p>
-      </section>
-
       {/* Collection */}
       <section className="mb-24">
         <h2 className="mb-6 text-xs font-medium uppercase tracking-widest text-muted">
