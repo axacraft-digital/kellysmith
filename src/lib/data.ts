@@ -49,6 +49,18 @@ export const cars = [
     images: ["/porsche/2025-porsche-911-carrera-pts.jpg"],
   },
   {
+    year: 2013,
+    make: "Ferrari",
+    model: "FF",
+    images: ["/porsche/2013-ferrari-ff.webp"],
+  },
+  {
+    year: 2003,
+    make: "Ferrari",
+    model: "456 MGTA",
+    images: ["/porsche/2003-ferrari-456-mgta.jpg"],
+  },
+  {
     year: 2023,
     make: "Porsche",
     model: "Taycan 4S",
@@ -83,18 +95,6 @@ export const cars = [
       "/porsche/2014-porsche-carrera-c4s-mexico-blue-1.jpg",
       "/porsche/2014-porsche-carrera-c4s-mexico-blue-2.jpg",
     ],
-  },
-  {
-    year: 2013,
-    make: "Ferrari",
-    model: "FF",
-    images: ["/porsche/2013-ferrari-ff.webp"],
-  },
-  {
-    year: 2003,
-    make: "Ferrari",
-    model: "456 MGTA",
-    images: ["/porsche/2003-ferrari-456-mgta.jpg"],
   },
   {
     year: 1996,
