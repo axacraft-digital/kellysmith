@@ -31,8 +31,9 @@ export default function PorschePage() {
         <p className="mt-4 text-muted">
           I started playing with cars in college and never looked back. In
           actual fact, I needed money so I would buy cars, fix them up and try
-          to sell them for a profit. Over time, that&apos;s led to some kind of
-          extreme fascination for the vehicles from Zuffenhausen.
+          to sell them for a profit. It was much later that I could begin
+          collecting these cars from Zuffenhausen. More recently, I&apos;ve been
+          adding the Italian variety from Maranello.
         </p>
       </header>
 
