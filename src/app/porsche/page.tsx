@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { cars } from "@/lib/data";
 import { buildMetadata } from "@/lib/metadata";
+import { buildBreadcrumbSchema } from "@/lib/seo-schema";
+import { JsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = buildMetadata({
   title: "Porsche — Kelly Smith",
@@ -14,6 +16,13 @@ export const metadata: Metadata = buildMetadata({
 export default function PorschePage() {
   return (
     <main className="mx-auto max-w-[680px] px-6 py-20 md:py-32">
+      <JsonLd
+        data={buildBreadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Porsche", path: "/porsche" },
+        ])}
+      />
+
       {/* Back link */}
       <Link
         href="/"

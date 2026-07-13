@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { Inter, Newsreader } from "next/font/google";
 import { buildMetadata } from "@/lib/metadata";
-import { buildWebSiteSchema, buildPersonSchema } from "@/lib/seo-schema";
+import {
+  buildWebSiteSchema,
+  buildPersonSchema,
+  buildOrganizationSchemas,
+} from "@/lib/seo-schema";
 import { JsonLd } from "@/components/seo/json-ld";
 import "./globals.css";
 
@@ -43,7 +47,13 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${newsreader.variable} antialiased`}
       >
-        <JsonLd data={[buildWebSiteSchema(), buildPersonSchema()]} />
+        <JsonLd
+          data={[
+            buildWebSiteSchema(),
+            buildPersonSchema(),
+            ...buildOrganizationSchemas(),
+          ]}
+        />
         {children}
       </body>
     </html>

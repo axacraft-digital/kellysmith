@@ -2,10 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { ventures, roles, links } from "@/lib/data";
 import { WorldClocks } from "@/components/world-clocks";
+import { JsonLd } from "@/components/seo/json-ld";
+import { buildProfilePageSchema } from "@/lib/seo-schema";
 
 export default function Home() {
   return (
     <main className="mx-auto max-w-[680px] px-6 py-20 md:py-32">
+      <JsonLd data={buildProfilePageSchema()} />
       {/* Header */}
       <header className="animate-enter mb-24" style={{ "--stagger": 0 } as React.CSSProperties}>
         <Image
