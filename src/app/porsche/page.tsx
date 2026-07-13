@@ -19,7 +19,7 @@ export default function PorschePage() {
         href="/"
         className="mb-16 inline-block text-sm text-muted hover:text-foreground"
       >
-        &larr; Kelly Smith
+        &larr; Back to Home
       </Link>
 
       {/* Header */}
