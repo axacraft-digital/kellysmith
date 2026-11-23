@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   ...buildMetadata({
     title: "Kelly Smith",
     description:
-      "Entrepreneur, product leader, and technologist based in Boise, Idaho.",
+      "Entrepreneur, product leader, and technologist based in Meridian, Idaho.",
     path: "/",
   }),
   robots: {

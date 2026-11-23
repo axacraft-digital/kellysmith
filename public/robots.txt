@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kellysmith.com/sitemap.xml
+Sitemap: https://www.kellysmith.com/sitemap.xml

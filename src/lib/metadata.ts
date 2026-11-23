@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const SITE_URL = "https://kellysmith.com";
+const SITE_URL = "https://www.kellysmith.com";
 const SITE_NAME = "Kelly Smith";
 const LOCALE = "en_US";
 

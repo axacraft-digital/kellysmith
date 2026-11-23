@@ -21,9 +21,9 @@ const organizations: {
   cofounder: boolean;
 }[] = [
   {
-    id: "https://curiousoffice.com/#organization",
+    id: "https://www.curiousoffice.com/#organization",
     name: "Curious Office",
-    url: "https://curiousoffice.com",
+    url: "https://www.curiousoffice.com",
     description: "Innovation lab, seed investment, startup incubation",
     cofounder: false,
   },
