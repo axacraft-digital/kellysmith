@@ -1,19 +1,20 @@
 # Kelly Smith
 
-> Entrepreneur, product leader, and technologist based in Boise, Idaho. Developer of Teligant, the first AI-native telehealth system.
+> Entrepreneur, product leader, and technologist based in Meridian, Idaho. Developer of Teligant, the first AI-native telehealth system.
 
-Kelly Smith is a technology polymath working at the intersection of design and code. He was formerly Head of Digital/Technology at Starbucks, Athletic Greens/AG1, MGM Resorts, and Hagerty. Earlier, companies he founded or invested in were acquired by Amazon, Microsoft, Google, Comcast, ESPN, and Priceline.
+Kelly Smith is a technology polymath working at the intersection of design and code. He was formerly Vice President of Global Digital Products at Starbucks, and Chief Digital Officer at Athletic Greens/AG1, MGM Resorts, and Hagerty. Earlier, companies he founded or invested in were acquired by Amazon, Microsoft, Google, Comcast, ESPN, and Priceline.
 
 ## Current Ventures
 - [Curious Office](https://curiousoffice.com): Innovation lab, seed investment, startup incubation
 - [Teligant](https://teligant.com): Telehealth & clinic management
-- [Hedfirst](https://hedfirst.com): AI-powered primary care
+- [Hedfirst](https://hedfirst.com): AI-supported, provider-guided telehealth for weight and metabolic health
 - [Axacraft](https://axacraft.com): AI-first enterprise solutions & agentic development
+- [Zeitcore](https://www.zeitcore.com): Customer data hub for Shopify
 - [Pitform](https://pitform.com): Operating system for automotive events
 
 ## Previously
 - Chief Digital Officer, Athletic Greens
-- Vice President, Product, Starbucks
+- Vice President of Global Digital Products, Starbucks
 - Chief Digital Officer, MGM Resorts
 - Chief Digital Officer, Hagerty
 
@@ -21,8 +22,8 @@ Kelly Smith is a technology polymath working at the intersection of design and c
 - Collecting classic air-cooled Porsches (and the occasional Ferrari from Maranello)
 
 ## Links
-- Website: https://kellysmith.com
-- Porsche collection: https://kellysmith.com/porsche
-- LinkedIn: https://linkedin.com/in/kellysmith
+- Website: https://www.kellysmith.com
+- Porsche collection: https://www.kellysmith.com/porsche
+- LinkedIn: https://www.linkedin.com/in/kellysmith/
 - X: https://x.com/curiousoffice
 - Instagram: https://instagram.com/curiousoffice

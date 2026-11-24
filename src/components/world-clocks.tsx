@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 const zones = [
-  { label: "Boise", zone: "America/Boise", local: true },
+  { label: "Meridian", zone: "America/Boise", local: true },
   { label: "New York", zone: "America/New_York" },
   { label: "London", zone: "Europe/London" },
   { label: "Tokyo", zone: "Asia/Tokyo" },

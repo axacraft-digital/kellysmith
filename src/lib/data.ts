@@ -12,7 +12,7 @@ export const ventures = [
   {
     name: "Hedfirst",
     url: "https://hedfirst.com",
-    description: "AI-powered primary care",
+    description: "AI-supported, provider-guided telehealth for weight and metabolic health.",
   },
   {
     name: "Axacraft",
@@ -28,14 +28,14 @@ export const ventures = [
 
 export const roles = [
   { title: "Chief Digital Officer", company: "Athletic Greens", url: "https://athleticgreens.com" },
-  { title: "Vice President, Product", company: "Starbucks", url: "https://starbucks.com" },
+  { title: "Vice President of Global Digital Products", company: "Starbucks", url: "https://starbucks.com" },
   { title: "Chief Digital Officer", company: "MGM Resorts", url: "https://mgmresorts.com" },
   { title: "Chief Digital Officer", company: "Hagerty", url: "https://hagerty.com" },
 ];
 
 export const links = [
   { label: "Email", url: "mailto:kellysmith@kellysmith.com" },
-  { label: "LinkedIn", url: "https://linkedin.com/in/kellysmith" },
+  { label: "LinkedIn", url: "https://www.linkedin.com/in/kellysmith/" },
   { label: "X", url: "https://x.com/curiousoffice" },
   { label: "Instagram", url: "https://instagram.com/curiousoffice" },
 ];

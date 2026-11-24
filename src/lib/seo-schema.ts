@@ -1,4 +1,3 @@
-import { ventures } from "@/lib/data";
 import { siteMetadataBase, siteName } from "@/lib/metadata";
 
 type SchemaValue = Record<string, unknown>;
@@ -12,13 +11,56 @@ const siteUrl = siteMetadataBase.toString().replace(/\/$/, "");
 
 const PERSON_ID = `${siteUrl}/#person`;
 const WEBSITE_ID = `${siteUrl}/#website`;
+const DARIA_PERSON_ID = "https://www.axacraft.com/#person-daria-smith";
 
-function orgId(name: string) {
-  const slug = name
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
-  return `${siteUrl}/#org-${slug}`;
+const organizations: {
+  id: string;
+  name: string;
+  url: string;
+  cofounder: boolean;
+}[] = [
+  {
+    id: "https://www.curiousoffice.com/#organization",
+    name: "Curious Office",
+    url: "https://www.curiousoffice.com",
+    cofounder: false,
+  },
+  {
+    id: "https://www.teligant.com/#organization",
+    name: "Teligant",
+    url: "https://www.teligant.com",
+    cofounder: true,
+  },
+  {
+    id: "https://www.hedfirst.com/#organization",
+    name: "Hedfirst",
+    url: "https://www.hedfirst.com",
+    cofounder: true,
+  },
+  {
+    id: "https://www.axacraft.com/#organization",
+    name: "Axacraft",
+    url: "https://www.axacraft.com",
+    cofounder: true,
+  },
+  {
+    id: "https://www.zeitcore.com/#organization",
+    name: "Zeitcore",
+    url: "https://www.zeitcore.com",
+    cofounder: true,
+  },
+  {
+    id: "https://pitform.com/#organization",
+    name: "Pitform",
+    url: "https://pitform.com",
+    cofounder: true,
+  },
+];
+
+function founderRefs(includeDaria: boolean) {
+  const kelly = { "@id": PERSON_ID };
+  if (!includeDaria) return kelly;
+  return [kelly, { "@id": DARIA_PERSON_ID }];
 }
 
 export function buildWebSiteSchema(): SchemaValue {
@@ -42,13 +84,13 @@ export function buildPersonSchema(): SchemaValue {
     image: `${siteUrl}/kelly-avatar.png`,
     jobTitle: "Entrepreneur & Product Leader",
     description:
-      "Entrepreneur, product leader, and technologist based in Boise, Idaho. " +
-      "Former Head of Digital/Technology at Starbucks, Athletic Greens/AG1, " +
-      "MGM Resorts, and Hagerty, and the developer of Teligant — the first " +
-      "AI-native telehealth system.",
+      "Entrepreneur, product leader, and technologist based in Meridian, Idaho. " +
+      "Former Vice President of Global Digital Products at Starbucks, Senior Vice President " +
+      "and Chief Digital Officer at MGM Resorts, Chief Digital Officer and Chief Information " +
+      "Officer at Hagerty, and Chief Digital Officer at Athletic Greens (AG1).",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Boise",
+      addressLocality: "Meridian",
       addressRegion: "ID",
       addressCountry: "US",
     },
@@ -61,24 +103,24 @@ export function buildPersonSchema(): SchemaValue {
       "Venture investing",
       "Classic Porsche collecting",
     ],
-    worksFor: ventures.map((v) => ({ "@id": orgId(v.name) })),
+    worksFor: organizations.map((org) => ({ "@id": org.id })),
     sameAs: [
-      "https://linkedin.com/in/kellysmith",
+      "https://www.linkedin.com/in/kellysmith/",
       "https://x.com/curiousoffice",
-      "https://instagram.com/curiousoffice",
+      "https://www.instagram.com/curiousoffice",
+      "https://www.geekwire.com/tag/kelly-smith/",
     ],
   };
 }
 
 export function buildOrganizationSchemas(): SchemaValue[] {
-  return ventures.map((v) => ({
+  return organizations.map((org) => ({
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": orgId(v.name),
-    name: v.name,
-    url: v.url,
-    description: v.description,
-    founder: { "@id": PERSON_ID },
+    "@id": org.id,
+    name: org.name,
+    url: org.url,
+    founder: founderRefs(org.cofounder),
   }));
 }
 
