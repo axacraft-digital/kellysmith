@@ -7,8 +7,9 @@ Kelly Smith is a technology polymath working at the intersection of design and c
 ## Current Ventures
 - [Curious Office](https://curiousoffice.com): Innovation lab, seed investment, startup incubation
 - [Teligant](https://teligant.com): Telehealth & clinic management
-- [Hedfirst](https://hedfirst.com): AI-supported, provider-guided telehealth for weight and metabolic health.
+- [Hedfirst](https://hedfirst.com): AI-supported, provider-guided telehealth for weight and metabolic health
 - [Axacraft](https://axacraft.com): AI-first enterprise solutions & agentic development
+- [Zeitcore](https://www.zeitcore.com): Customer data hub for Shopify
 - [Pitform](https://pitform.com): Operating system for automotive events
 
 ## Previously

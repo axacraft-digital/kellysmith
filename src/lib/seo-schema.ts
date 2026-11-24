@@ -17,51 +17,42 @@ const organizations: {
   id: string;
   name: string;
   url: string;
-  description: string;
   cofounder: boolean;
 }[] = [
   {
     id: "https://www.curiousoffice.com/#organization",
     name: "Curious Office",
     url: "https://www.curiousoffice.com",
-    description: "Innovation lab, seed investment, startup incubation",
     cofounder: false,
   },
   {
     id: "https://www.teligant.com/#organization",
     name: "Teligant",
     url: "https://www.teligant.com",
-    description: "Telehealth & clinic management",
     cofounder: true,
   },
   {
     id: "https://www.hedfirst.com/#organization",
     name: "Hedfirst",
     url: "https://www.hedfirst.com",
-    description:
-      "AI-supported, provider-guided telehealth for weight and metabolic health.",
     cofounder: true,
   },
   {
     id: "https://www.axacraft.com/#organization",
     name: "Axacraft",
     url: "https://www.axacraft.com",
-    description: "AI-first enterprise solutions & agentic development",
     cofounder: true,
   },
   {
     id: "https://www.zeitcore.com/#organization",
     name: "Zeitcore",
     url: "https://www.zeitcore.com",
-    description:
-      "A Shopify Plus customer data platform and data hub for personalization and customer insights.",
     cofounder: true,
   },
   {
     id: "https://pitform.com/#organization",
     name: "Pitform",
     url: "https://pitform.com",
-    description: "Operating system for automotive events",
     cofounder: true,
   },
 ];
@@ -115,7 +106,6 @@ export function buildPersonSchema(): SchemaValue {
     worksFor: organizations.map((org) => ({ "@id": org.id })),
     sameAs: [
       "https://www.linkedin.com/in/kellysmith/",
-      "https://www.crunchbase.com/person/kelly-smith",
       "https://x.com/curiousoffice",
       "https://www.instagram.com/curiousoffice",
       "https://www.geekwire.com/tag/kelly-smith/",
@@ -130,7 +120,6 @@ export function buildOrganizationSchemas(): SchemaValue[] {
     "@id": org.id,
     name: org.name,
     url: org.url,
-    description: org.description,
     founder: founderRefs(org.cofounder),
   }));
 }
